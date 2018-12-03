@@ -1,0 +1,25 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"forloop": {
+		"scope": "javascript,typescript",
+		"prefix": "for",
+		"body": [
+			"for (let ${2:i} = 0, l = ${1:array}.length; ${2:i} < l; ${2:i} += 1) {\n\tconst ${3:element} = ${1:array}[${2:i}];\n}",
+		],
+		"description": "for output to for loop for eslint"
+  },
+  "forin": {
+		"scope": "javascript",
+		"prefix": "forin",
+		"body": [
+			"for (const ${2:key} in ${1:object}) {\n\tif (Object.prototype.hasOwnProperty.call(${1:object}, ${2:key})) {\n\t\tdoSomething(${2:key});\n\t}\n}",
+		],
+		"description": "forin output to for-in for eslint"
+	}
+}
